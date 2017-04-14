@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>获取鼠标坐标位</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+			body {
+				background-color: #ddd;
+			}
+			#canvas {
+				position: absolute;
+				top: 40%;
+				margin-left: 200px;
+				background-color: #fff;
+				border: thin inset #aaa;
+				cursor: crosshair;
+			}
+			#readout {
+				margin-top: 10px;
+				margin-left: 15px;
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="readout"></div>
+		<canvas id="canvas" width="600px" height="600">
+			您的浏览器不支持HTML5的Canvas，请使用Chrome、Firefox、Safari或是IE11及以上打开
+		</canvas>
+		<script src="./js/004.js"></script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>绘制简单的矩形</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+			body {
+				background-color: rgba(100, 145, 250, 0.3);
+			}
+			#canvas {
+				margin-left: 20px;
+				margin-right: 0;
+				margin-bottom: 20px;
+				border: thin solid #aaa;
+				cursor: crosshair;
+				padding: 0;
+			}
+			.box {
+  margin: 80px 30px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background: #fff;
+  float: left;
+}
+.box:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      top: -10px;
+      left: -10px;
+      background-image: linear-gradient(90deg, yellow, gold);
+}
+		</style>
+	</head>
+	<body>
+		<!-- <canvas id="canvas" width="680" height="850">
+			您的浏览器不支持HTML5的Canvas，请使用Chrome、Firefox、Safari或是IE11及以上打开
+		</canvas> -->
+		<div class="box"></div>
+		<script src="./js/008.js"></script>
+	</body>
+</html>
